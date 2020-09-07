@@ -10,7 +10,7 @@ public class SimpleBot {
         remindName();
         guessAge();
         count();
-        // ...
+        test();
         end();
     }
 
@@ -45,7 +45,12 @@ public class SimpleBot {
 
     static void test() {
         System.out.println("Let's test your programming knowledge.");
-        // write your code here
+        int testInput = 0;
+        while (testInput != 2) {
+            testInput = scanner.nextInt();
+            System.out.println("Please, try again.");
+        }
+        end();
     }
 
     static void end() {
